@@ -12,7 +12,7 @@ export const runtime = "edge";
 export default function Home() {
   return (
     <>
-      <section className="xl:p-1 wide:padding-r padding-b">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
       <section className="padding">
