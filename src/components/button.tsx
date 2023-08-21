@@ -7,6 +7,7 @@ interface ButtonProps {
   backgroundColor?: string;
   borderColor?: string;
   textColor?: string;
+  fullWidth?: boolean;
 }
 
 export default function Button({
@@ -15,6 +16,7 @@ export default function Button({
   backgroundColor,
   borderColor,
   textColor,
+  fullWidth,
 }: ButtonProps) {
   return (
     <button
@@ -22,7 +24,8 @@ export default function Button({
         "flex flex-row justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full",
         backgroundColor ? backgroundColor : "bg-coral-red",
         textColor ? textColor : "text-white",
-        borderColor ? borderColor : "border-coral-red"
+        borderColor ? borderColor : "border-coral-red",
+        fullWidth && "w-full"
       )}
     >
       {label}
